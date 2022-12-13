@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './PostForm'
+import Buttons from '../Buttons/Buttons';
 
 const PostForm = (props) => {
 
     const [fullName, setFullName] = useState();
     const [post, setPost] = useState();
+    const[button, setButton] = useState();
 
     function onSubmit(event){
         event.preventDefault();
@@ -18,9 +20,9 @@ const PostForm = (props) => {
 
     return ( 
         <form onSubmit={onSubmit} action="post">
-            <label htmlFor="full_name">Name</label>
+            <label htmlFor="full_name">Name: </label>
             <input type="text" value={fullName} name='full_name' onChange={(event) =>  setFullName(event.target.value)}/><br />
-            <label htmlFor="post_content">Post</label>
+            <label htmlFor="post_content">Post: </label>
             <input type="text"  value={post} name="post_content" onChange={(event) => setPost(event.target.value)}/>
             <button type='submit'>Post</button>
         </form>

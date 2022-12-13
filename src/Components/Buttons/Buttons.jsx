@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 const Buttons = (props) => {
     return ( 
         <div>
@@ -10,4 +8,4 @@ const Buttons = (props) => {
      );
 }
  
-export default Buttons;props
+export default Buttons;
