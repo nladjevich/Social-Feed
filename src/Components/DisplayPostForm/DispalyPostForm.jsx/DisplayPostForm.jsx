@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
-
 const DislayPostForm = (props) => {
-    {props.parentEntries.map((post) => {
-        return (
-            <div>
-                <h3>{post.fullName}</h3>
-                <p>{post.post}</p>
-            </div>
-            
-        )
-    })}
-
+    return(
+       <table>
+        <tbody>
+            {props.parentEntries.map((posts, index) => {
+                return(
+                    <tr key={index}>
+                    <th>{posts.fullName}</th>
+                    <td>{posts.post}</td>
+                </tr>
+                )
+                
+            })}
+        </tbody>
+       </table>
+    )
+        
 }
- 
+
 export default DislayPostForm;
+
+    

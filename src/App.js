@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import './Components/PostForm/PostForm'
 import PostForm from './Components/PostForm/PostForm';
 import DislayPostForm from './Components/DisplayPostForm/DispalyPostForm.jsx/DisplayPostForm';
 
 function App() {
 
-  const[posts, setPosts] = useState()
+  const[posts, setPosts] = useState([{Fullname: 'Eric Man', Post:'Hi Guys:3'}])
 
   function addNewPost(post){
 
@@ -16,8 +15,8 @@ function App() {
 
   return (
     <div>
-      <PostForm></PostForm>
-      <DislayPostForm postProperty={addNewPost}/>
+      <PostForm postProperty={addNewPost} ></PostForm>
+      <DislayPostForm parentEntries={posts}/>
       
     </div>
   );
