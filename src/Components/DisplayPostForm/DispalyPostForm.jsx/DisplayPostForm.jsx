@@ -1,3 +1,5 @@
+import Buttons from "../../Buttons/Buttons";
+
 const DislayPostForm = (props) => {
     return(
        <table>
@@ -7,7 +9,7 @@ const DislayPostForm = (props) => {
                     <tr key={index}>
                     <th>{posts.fullName}</th>
                     <td>{posts.post}</td>
-                    <td>{posts.button}</td>
+                    <td><Buttons/></td>
                 </tr>
                 )
                 

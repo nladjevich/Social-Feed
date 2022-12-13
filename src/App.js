@@ -6,7 +6,7 @@ import DislayPostForm from './Components/DisplayPostForm/DispalyPostForm.jsx/Dis
 
 function App() {
 
-  const[posts, setPosts] = useState([{}])
+  const[posts, setPosts] = useState([])
 
   function addNewPost(post){
 

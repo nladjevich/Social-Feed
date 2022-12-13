@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './PostForm'
-import Buttons from '../Buttons/Buttons';
+
 
 const PostForm = (props) => {
 
     const [fullName, setFullName] = useState();
     const [post, setPost] = useState();
-    const[button, setButton] = useState();
+  
 
     function onSubmit(event){
         event.preventDefault();
