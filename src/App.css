@@ -1,0 +1,18 @@
+.border-styles {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+}
+
+.width {
+    width: max-content;
+}
+
+.set-width {
+    width: 200%;
+    height: 200%;
+}

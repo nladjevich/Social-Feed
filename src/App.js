@@ -1,7 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import PostForm from './Components/PostForm/PostForm';
-import DislayPostForm from './Components/DisplayPostForm/DispalyPostForm.jsx/DisplayPostForm';
+import DislayPostForm from './Components/DisplayPostForm/DisplayPostForm';
+import './App.css'
 
 
 function App() {
@@ -16,10 +16,20 @@ function App() {
   }
 
   return (
-    <div>
-      <PostForm postProperty={addNewPost} ></PostForm>
-      <DislayPostForm parentEntries={posts}/>
+    <div className='container width d-flex align-content-centerS'>
+      <div className='row'>
+        <div className='col-md-6'>
+          <div className='border-styles width' style={{'background-color': 'white'}}>
+            <PostForm postProperty={addNewPost} className='panel'></PostForm>
+          </div>
+          <div className='border-styles width set-width' style={{'background-color': 'white'}}>
+            <DislayPostForm parentEntries={posts} className='panel'/>
+          </div>
+        </div>
+      </div>
     </div>
+    
+
   );
 }
 

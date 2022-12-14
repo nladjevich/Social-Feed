@@ -1,15 +1,16 @@
-import Buttons from "../../Buttons/Buttons";
+import Buttons from "../Buttons/Buttons";
+import '../DisplayPostForm/DisplayPostForm'
 
 const DislayPostForm = (props) => {
     return(
-       <table>
+       <table className="table">
         <tbody>
             {props.parentEntries.map((posts, index) => {
                 return(
                     <tr key={index}>
-                    <th>{posts.fullName}</th>
+                    <th>{posts.fullName} </th>
                     <td>{posts.post}</td>
-                    <td><Buttons/></td>
+                    <td className="btn-size"><Buttons/></td>
                 </tr>
                 )
                 
